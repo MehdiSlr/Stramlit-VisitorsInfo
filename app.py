@@ -9,7 +9,7 @@ st.set_page_config(initial_sidebar_state="collapsed", page_title="دانشگاه
 
 conn = st.connection("gsheets", type=GSheetsConnection)
 
-with open("app\style.css") as css:
+with open("app/style.css") as css:
     st.markdown(f"<style>{css.read()}</style>", unsafe_allow_html=True)
 
 st.title("فرم ثبت اطلاعات افراد ملاقات کننده باهمکاران دانشگاه جامع علمی کاربردی واحد استان خراسان رضوی")
